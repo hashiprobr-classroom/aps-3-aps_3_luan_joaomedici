@@ -11,10 +11,8 @@ public class Usuario {
     public void setNome(String nome){
         this.nome=nome;
     }
-    public void setApelido(String apelido){
-        this.apelido=apelido;
-    }
     public String getNome(){
         return nome;
     }
+    public String getApelido(){return apelido;}
 }
