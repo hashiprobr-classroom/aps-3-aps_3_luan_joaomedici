@@ -4,10 +4,18 @@ import java.util.List;
 
 public class Loja {
     private String dono;
-    private List<String> jogos;
-    public Loja(String dono, List<String> jogos){
+    private List<Jogo> jogos;
+    public Loja(String dono, List<Jogo> jogos){
         this.dono = dono;
         this.jogos = jogos;
     }
-    /** Fazer mais um metodo depois que jogo for completado **/
+    public int numeroAvaliados(Usuario usuario){
+        int contador = 0;
+        for(Jogo jogo : jogos){
+            if (jogo.avaliado(usuario.getApelido())){
+                contador +=1;
+            }
+        }
+        return contador;
+    }
 }

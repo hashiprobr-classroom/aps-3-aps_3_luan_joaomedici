@@ -6,7 +6,7 @@ import java.util.Map;
 public class Jogo {
     private int id;
     private String nome;
-    private Map<Usuario,Integer> avaliacoes;
+    private Map<String,Integer> avaliacoes;
 
     public Jogo(int id,String nome){
         this.id=id;
@@ -19,10 +19,10 @@ public class Jogo {
     public String getNome(){
         return nome;
     }
-    public void avalia(Usuario apelido,int avaliacao){
+    public void avalia(String apelido,int avaliacao){
         avaliacoes.put(apelido,avaliacao);
     }
-    public boolean avaliado(Usuario apelido){
+    public boolean avaliado(String apelido){
         return avaliacoes.containsKey(apelido);
     }
     public double media(){
