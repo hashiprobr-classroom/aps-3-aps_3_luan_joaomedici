@@ -20,7 +20,7 @@ public class JogoTest {
         cs.avalia(luan.getApelido(),3);
         assertTrue(cs.avaliado(luan.getApelido()));
         assertFalse(cs.avaliado("luís"));
-        assertEquals(3,cs.media());
+        assertEquals(3,cs.media(),delta);
     }
     @Test
     void avaliaDuasVezes(){
@@ -31,7 +31,7 @@ public class JogoTest {
         roblox.avalia(luis.getApelido(),4);
         assertTrue(roblox.avaliado(luan.getApelido()));
         assertTrue(roblox.avaliado(luis.getApelido()));
-        assertEquals(3.5,roblox.media());
+        assertEquals(3.5,roblox.media(),delta);
     }
     @Test
     void avaliaTresVezes(){
@@ -41,6 +41,6 @@ public class JogoTest {
         bloons.avalia(luan.getApelido(),3);
         bloons.avalia(luis.getApelido(),4);
         bloons.avalia(luan.getApelido(),5);
-        assertEquals(4.5,bloons.media());
+        assertEquals(4.5,bloons.media(),delta);
     }
 }
