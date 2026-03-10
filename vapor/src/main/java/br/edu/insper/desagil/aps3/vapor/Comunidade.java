@@ -1,10 +1,11 @@
 package br.edu.insper.desagil.aps3.vapor;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Comunidade {
-    private List<Usuarios> usuarios;
+    private List<Usuario> usuarios;
 
     public Comunidade(){
         usuarios = new ArrayList<>();
@@ -13,10 +14,10 @@ public class Comunidade {
     public void AdicionaUsuario(Usuario usuario){
         usuarios.add(usuario);
     }
-    public List<String> getApelidos{
-        List<String> apelidos = new ArrayList();
+    public List<String> getApelidos(){
+        List<String> apelidos = new ArrayList<>();
         for (Usuario usuario : usuarios) {
-            apelidos.put(usuario.getApelido());
+            apelidos.add(usuario.getApelido());
         }
         return apelidos;
     }
