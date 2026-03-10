@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="desagil-aps3-vapor" />
-        <module name="desagil-aps3-horizon" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="desagil-aps3-horizon" target="25" />
+      <module name="desagil-aps3-vapor" target="25" />
+    </bytecodeTargetLevel>
   </component>
 </project>

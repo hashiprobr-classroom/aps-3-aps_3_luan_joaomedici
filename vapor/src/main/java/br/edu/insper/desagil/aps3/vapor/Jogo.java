@@ -7,3 +7,4 @@ public class Jogo {
     private String nome;
     private Map<Usuario,Integer> avaliacoes;
 }
+/** parte do medici **/
