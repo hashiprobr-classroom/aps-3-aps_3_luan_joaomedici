@@ -1,13 +1,16 @@
 package br.edu.insper.desagil.aps3.vapor;
 
+import java.util.List;
+
 public class ComunidadeDeJogo extends Comunidade{
-private String Jogo;
-public ComunidadeDeJogo(String Jogo){
+    private String Jogo;
+    public ComunidadeDeJogo(List<Usuario> usuarios, String Jogo){
     super(usuarios);
     this.Jogo = Jogo;
     }
-public void AdicionaUsuario(Usuario usuario){
-        usuarios.add(usuario);
+
+    @Override
+    public void adicionaMembro(Usuario usuario){
         /** extender o codigo depois que finalizar jogo e lojaw **/
     }
 }
