@@ -6,11 +6,12 @@ import java.util.Map;
 public class Jogo {
     private int id;
     private String nome;
-    private Map<Usuario,Integer> avaliacoes=new HashMap<>();
+    private Map<Usuario,Integer> avaliacoes;
 
     public Jogo(int id,String nome){
         this.id=id;
         this.nome=nome;
+        this.avaliacoes=new HashMap<>();
     }
     public int getId(){
         return id;
