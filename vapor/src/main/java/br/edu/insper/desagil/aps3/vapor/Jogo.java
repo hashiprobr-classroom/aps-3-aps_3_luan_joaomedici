@@ -32,7 +32,7 @@ public class Jogo {
             for (int avaliacao:avaliacoes.values()) {
                 valorMedio += avaliacao;
             }
-            return valorMedio;
+            return valorMedio/n;
         }
         else {
             return 0;
